@@ -1,0 +1,16 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": ".\\node_modules\\.bin\\tsc 01-intro",
+    "start": "node 01-intro.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "D-Perez85",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
