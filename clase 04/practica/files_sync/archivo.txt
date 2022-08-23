@@ -1,0 +1,2 @@
+El contenido se escribio en el archivo
+Contenido agregado en el archivo con append
