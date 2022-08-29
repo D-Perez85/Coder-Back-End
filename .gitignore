@@ -1,0 +1,10 @@
+
+# dependencies
+/node_modules
+
+# Ignore all text files
+*.txt
+
+# misc
+.env
+
