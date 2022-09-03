@@ -1,3 +1,4 @@
+/**  Copia de Archivo entregable 03 - Clase Contenedor */
 const fs = require('fs');
 
 class Contenedor {
@@ -112,21 +113,4 @@ class Contenedor {
         await fs.promises.writeFile(this.name, JSON.stringify(objects, null, 2));
     }
 }
-let contenedor = new Contenedor("productos.txt")
-let informacionNueva = 
-{
-    title: "Regla",
-    price: 100,
-    thumbnail: "https://previews.123rf.com/images/perysty/perysty1510/perysty151000049/46317914-ilustraci%C3%B3n-vectorial-de-la-regla-instrumento-de-medici%C3%B3n.jpg",
-    id: 0
-  
-}
-
-// contenedor.Save(informacionNueva).then((res) => console.log(res))
-// contenedor.GetAll().then((res)=> console.log(res))
-// contenedor.GetById(1).then((res)=> console.log(res))
-// contenedor.DeleteById(4).then((res)=> console.log(res))
-// contenedor.DeleteAll().then((res)=> console.log(res))
-
-
 module.exports = Contenedor
