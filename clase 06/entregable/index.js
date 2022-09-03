@@ -11,9 +11,9 @@ app.listen(PORT, function () {
 
 const productos = new Contenedor('productos.txt');
 
-// app.get('/', async (req, res) => {
-//      res.send(`Pagina de inicio  -  Utilize las rutas productos  / productoRandom para visualizar los datos`);
-// })
+app.get('/', async (req, res) => {
+     res.send(`Pagina de inicio  -  Utilize las rutas productos  / productoRandom para visualizar los datos`);
+})
 
 app.get('/productos', async (req, res) => {
         const mostrarProductos = await productos.GetAll();
