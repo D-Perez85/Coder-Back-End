@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="display: flex; gap: 50px; margin: 0 auto;">
+    <div>
+      <h3>Agregar persona</h3>
+      <form action="/personas" method="POST">
+        <label for="p-nombre">Nombre de la persona:</label>
+        <input type="text" name="nombre" id="p-nombre"><br>
+
+        <label for="p-apellido">Apellido de la persona:</label>
+        <input type="text" name="apellido" id="p-apellido"><br>
+
+        <label for="p-edad">Edad de la persona:</label>
+        <input type="text" name="edad" id="p-edad"><br>
+
+        <input type="submit" value="Agregar persona">
+      </form>
+    </div>
+    <div>
+      <h3>Agregar Mascota</h3>
+      <form action="/mascotas" method="POST">
+        <label for="m-nombre">Nombre de la mascota:</label>
+        <input type="text" name="nombre" id="m-nombre"><br>
+
+        <label for="m-raza">Raza de la mascota:</label>
+        <input type="text" name="raza" id="m-raza"><br>
+
+        <label for="m-edad">Edad de la mascota:</label>
+        <input type="text" name="edad" id="m-edad"><br>
+
+        <input type="submit" value="Agregar mascota">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
