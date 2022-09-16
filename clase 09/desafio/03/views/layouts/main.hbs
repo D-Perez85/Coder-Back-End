@@ -1,0 +1,27 @@
+{{#if admin}}
+ <hr>
+  {{> header}}
+<hr>
+
+{{#if mostrarPersonas}}
+  <div style="contianer row-md">
+    {{#each personas}}
+      <div>
+        <div style="height: 150px;width: 250px;margin:16px;">
+        <ul>
+          <h3 >DATOS PERSONALES</h3>
+          <li style="font-family: monospace; font-size:large; color:black">{{this.nombre}}</li>
+          <li style="font-family: monospace; font-size:large; color:black">{{this.apellido}}</li>
+          <li style="font-family: monospace; font-size:large; color:black">{{this.edad}}</li>
+          <li style="font-family: monospace; font-size:large; color:black">{{this.email}}</li>
+          <li style="font-family: monospace; font-size:large; color:black">{{this.telefono}}</li>
+        </ul>
+      </div>
+      </div>
+    {{/each}}
+  </div>
+{{/if}}  
+ <hr>
+{{> footer}}
+ <hr>
+{{/if}}

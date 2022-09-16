@@ -1,11 +1,12 @@
 const express = require("express");
+const apiRoutes = require('../routers/app.router');
 
 class Server {
   constructor() {
     this.app = express();
     this.port = process.env.PORT;
     this.paths = {
-      productos : '/api/productos',
+      productos : '/api',
     }
     // Middlewares
     this.middlewares();
@@ -18,15 +19,20 @@ class Server {
     this.app.use(express.urlencoded({ extended: true }));
     // Public Folder
     this.app.use(express.static(__dirname + '../../public'));
-    // this.app.use(express.static("public"));
   }
   routes() {
-     this.app.use(this.paths.productos, require("../routes/productos")); 
+     this.app.use(this.paths.productos, apiRoutes); 
   }
   listen() {
     this.app.listen(this.port, () => {
       console.log(`listen at the port ${this.port}`);
     });
   }
+  error(){
+    this.app.on('error', (error)=> {
+      console.error('ERROR', error);
+  });
+  }
 }
 module.exports = Server;
+
