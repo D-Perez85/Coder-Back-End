@@ -1,0 +1,19 @@
+{{#if admin}}
+  <h3>Estos son los productos mas caros</h3>
+  {{> expensiveProducts}}
+  <br>
+  <h3>Estos son los productos mas economicos</h3>
+  {{> economicProducts}}
+{{/if}}
+{{#if mostrarProductos}}
+  <div style="contianer row-md">
+    {{#each products}}
+      <div>
+        <div style="height: 250px;width: 250px;margin:16px;">
+          <img src={{this.imagen}} alt={{this.id}} style="width: 100%; min-height: 100%; max-height: 100%; border-radius: 25px">
+        </div>
+        <h4 style="font-family: monospace; text-align: center; font-size:large; color:whitesmoke">{{this.nombre}}</h4>
+      </div>
+    {{/each}}
+  </div>
+{{/if}}
