@@ -37,9 +37,9 @@ git clone https://github.com/D-Perez85/Coder-Back-End.git
 ```
 
 ### `Run`
-Una vez instaladas las dependencias podras correr la App en el directorio del proyecto.  
+Una vez instaladas las dependencias podras correr la App en el directorio del proyecto, (revisar el script correspondiente).  
 ```
-nodemon app.js / node app.js
+nodemon index.js / node index.js
 ```
 
 
