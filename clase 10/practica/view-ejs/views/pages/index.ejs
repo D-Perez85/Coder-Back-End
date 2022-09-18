@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<body class="container">
+
+    <hr>
+    <% if(showSaludo){ %>
+    <h3> <%= saludo %> </h3>
+    <h3> <%= "saludo" %> </h3>
+    <% } %>
+    <hr>
+    <main>
+        <h1><%= tagline %></h1>
+        <div class="jumbotron">
+            <h4> <%= "01)" %> </h4>
+            <hr>
+            <ul>
+                <% arreglo.forEach(item => { %>
+                <li> Item: <%= item %> </li>
+                <% });  %>
+            </ul>
+            <hr>
+            <h4> <%= "02)" %> </h4>
+            <hr>
+            <ul>
+                <% personas.forEach(function(value) { %>
+                <li>
+                    <strong><%= value.name %> <%= value.apellido %></strong>
+                </li>
+                <% }); %>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>
