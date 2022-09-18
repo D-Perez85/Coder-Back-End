@@ -1,0 +1,10 @@
+html
+    head 
+        title 'Mi segunda plantilla PUG' 
+    body 
+        h1 Segunda plantilla PUG
+        p= saludo 
+        if showList
+            ul 
+                each item in arreglo
+                    li= `Item ${item}`
