@@ -33,7 +33,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 ### `Clonar` 
 Clonar el proyecto utilizando git clone  dentro de tu entorno local para poder obtener el codigo fuente. 
 ```
-git clone https://github.com/D-Perez85/Node-Rest-Server.git
+git clone https://github.com/D-Perez85/Coder-Back-End.git
 ```
 
 ### `Run`
