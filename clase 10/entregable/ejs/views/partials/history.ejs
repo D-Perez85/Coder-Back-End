@@ -1,0 +1,27 @@
+<h3 class="text-primary"> Productos </h3>
+<br>
+<% if (productos.length > 0) { %>
+<div class="table-responsive">
+  <table class="table">
+    <tr class="text-success">
+      <th class="font-weight-bold">Title</th>
+      <th class="font-weight-bold">Price</th>
+      <th class="font-weight-bold">Foto URL</th>
+    </tr>
+    <% productos.forEach(value => { %>
+    <tr>
+      <td><%=value.title%></td>
+      <td><%=value.price%></td>
+      <td style="height: 40px; width: 40px;">
+        <%- include('../partials/imagen', {url: value.thumbnail})%>
+      </td>
+    </tr>
+    <% }); %>
+  </table>
+</div>
+<% } else{ %>
+<h3 class="alert alert-danger">no se encontraron productos</h1>
+  <% } %>
+  <div style="display: flex; justify-content: center; flex-direction: column;width: 70%; margin: 0 auto;">
+    <a href="/" class="btn btn-primary mb-5 "> Home </a>
+  </div>
