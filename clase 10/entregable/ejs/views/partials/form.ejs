@@ -1,0 +1,22 @@
+<h3 class="text-primary">Ingrese los datos del Producto</h3>
+<br>
+<form action="/productos" method="post">
+  <div class="form-group">
+    <label for="title" class="font-weight-bold">Title</label>
+    <input type="text" name="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="price" class="font-weight-bold">Price</label>
+    <input type="number" name="price" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="thumbnail" class="font-weight-bold">Foto URL</label>
+    <input type="text" name="thumbnail" class="form-control">
+  </div>
+  <div style="display:flex; flex-direction: column; width: 70%;  margin: 0 auto;">
+
+    <input type="submit" value="Enviar" class="btn btn-success mt-3 mb-1">
+    <a href="/productos" class="btn btn-primary mb-5"> Historial </a>
+  </div>
+
+</form>

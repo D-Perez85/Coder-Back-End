@@ -1,0 +1,17 @@
+h3(class="text-primary")='Productos'
+br
+if productos.length > 0
+  div(class="table-responsive")
+      table(class="table")
+          tr(class="text-success")
+            th(class="font-weight-bold")='Title'
+            th(class="font-weight-bold")='Price'
+            th(class="font-weight-bold")='Foto URL'
+            each producto in productos 
+              tr
+                td=producto.title
+                td=producto.price
+                td(style="height: 40px; width: 40px;")
+                  include ../partials/imagen.pug
+else
+  h3(class="alert alert-danger")='no se encontraron productos'
