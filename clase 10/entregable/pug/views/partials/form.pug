@@ -1,0 +1,15 @@
+h3(class="text-primary")='Ingrese los datos del Producto'
+br
+form(action="/productos", method="post")
+  div(class="form-group")
+    label(class="font-weight-bold")='Title'
+    input(type="text", name="title", class="form-control")
+  div(class="form-group")
+    label(class="font-weight-bold")='Price'
+    input(type="number", name="price", class="form-control")
+  div(class="form-group")
+    label(class="font-weight-bold")='Foto URL'
+    input(type="text", name="thumbnail", class="form-control")
+  div(style="display:flex; flex-direction: column; width: 70%;  margin: 0 auto;")
+    input(type="submit", value="Enviar", class="btn btn-success mt-3 mb-1")
+    a(href="/productos" class="btn btn-primary mb-5") Historial
