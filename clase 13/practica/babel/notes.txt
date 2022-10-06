@@ -1,0 +1,6 @@
+Comandos:
+- npm install @babel/core (Libreria principal)
+- npm install @babel/cli (Cliente por terminal)
+- npm install@babel/preset-env (Plugin de config para que acepte los files JS de ultima generación)
+- npm run build:   (babel index.js -d dist") // lo ultimo setea el lugar donde quiero guardar el build
+- npm start:   (node index.js) // Levanta a index.js creado en el build
