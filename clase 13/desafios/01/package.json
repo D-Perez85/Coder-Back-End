@@ -1,0 +1,22 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./color.js -o ./index.js -w",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "D-Perez85",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2"
+  }
+}
+
+
+
+
