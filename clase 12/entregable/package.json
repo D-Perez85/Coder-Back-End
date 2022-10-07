@@ -1,20 +1,22 @@
 {
-  "name": "Entregable-06",
+  "name": "coder_pb_10",
   "version": "1.0.0",
-  "description": "\"# Entregable-06\"",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/D-Perez85/Entregable-06.git"
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "D-Perez85",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/D-Perez85/Entregable-06/issues"
-  },
-  "homepage": "https://github.com/D-Perez85/Entregable-06#readme"
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.6",
+    "moment": "^2.29.4",
+    "pug": "^3.0.2",
+    "socket.io": "^4.5.2"
+  }
 }
