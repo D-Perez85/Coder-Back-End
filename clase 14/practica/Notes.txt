@@ -1,0 +1,17 @@
+/** 
+ * Conceptos fundamentales (7)
+ * 1. Modo: Production, development
+ * 2. Entry: Archivo de entrada de webpack
+ * 3. Target: Objetivo 
+ * 4. Output: Salida donde queremos almacenar los archivos resultantes del empaquetamiento
+ * 5. Loaders: Tools que ayudan a empaquetar archivos diferentes de JS
+ * 6. Plugins: Tools que nos permiten hacer tareas adicionales a la hora de empaquetar (ofuscar, etc)
+ * 7. Compatibilidad: respecto a navegadores (opcional) 
+ */
+
+// 01 - Global
+// 02 - Local: npx webpack
+// 03 - Local Proyecto: script
+
+// npm run build
+// npm run build-dev | npm run build-prod
