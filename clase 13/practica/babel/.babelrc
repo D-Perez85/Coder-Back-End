@@ -1,0 +1,5 @@
+// Aca van las configuraciones que quiero darle a babel
+{
+    "presets": ["@babel/preset-env"], //configuracion pre-establecida
+    "plugins": [] //Puedo setear distintos plugins (deben estar instalados)
+}

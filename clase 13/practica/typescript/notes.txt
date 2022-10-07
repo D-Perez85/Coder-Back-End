@@ -1,0 +1,5 @@
+Comandos:
+- npm i typescript
+- npx tsc index.ts (crear file index.js)
+- npm run build:   (tsc index.ts)
+- npm run watch:   (tsc index.ts -w) // Modo Escucha - Queda compilando esperando por cambios

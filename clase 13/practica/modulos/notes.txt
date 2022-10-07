@@ -1,0 +1,4 @@
+Comandos:
+- add en package.json: "type": "module",
+- npm i moment
+  
