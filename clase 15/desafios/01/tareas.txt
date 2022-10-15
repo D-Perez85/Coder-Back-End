@@ -1,0 +1,5 @@
+Realizar la siguientes operaciones:
+-   Iniciar el servicio de base de datos MySQL/MariaDB mediante el panel de control de XAMPP.
+-   Listar las bases de datos presentes realizando la consulta SQL con MySQL Workbench.
+-   Listar las bases de datos presentes por consola mysql: C:\xampp\mysql\bin,  usar modo administrador ('mysql -u root').
+-   Listar las bases de datos existentes en el navegador el cliente web de la DB, (Apache XAMPP) con url http://localhost/phpmyadmin/
